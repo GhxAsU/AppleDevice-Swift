@@ -1,0 +1,6 @@
+framework module AppleDevice_Swift {
+  umbrella header "AppleDevice-Swift-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,16 @@
+PODS:
+  - AppleDevice-Swift (0.1.0)
+
+DEPENDENCIES:
+  - AppleDevice-Swift (from `../`)
+
+EXTERNAL SOURCES:
+  AppleDevice-Swift:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  AppleDevice-Swift: 2a68ba45c0d4626e6582e0d12c211a731477d8bb
+
+PODFILE CHECKSUM: 52b1aa9c5c4e3f7e19d5655ee9ff623003008374
+
+COCOAPODS: 1.9.3
