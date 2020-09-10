@@ -8,7 +8,7 @@
 import Foundation
 
 enum iPhoneDeviceModel: String, DeviceModelProtocol {
-    case iPhone_Simulator = "x86_64"
+    case iPhone_Simulator = "iPhone Simulator"
     case iPhone_2G = "iPhone 2G"
     case iPhone_3G = "iPhone 3G"
     case iPhone_3GS = "iPhone 3GS"
@@ -103,7 +103,7 @@ enum iPhoneDeviceIdentifier: String, DeviceIdentifierProtocol {
     var modelName: String {
         switch self {
         case .iPhone_Simulator:
-            return "iPhone Simulator"
+            return iPhoneDeviceModel.iPhone_Simulator.modelName
         case .iPhone1_1:
             return "iPhone 2G"
         case .iPhone1_2:

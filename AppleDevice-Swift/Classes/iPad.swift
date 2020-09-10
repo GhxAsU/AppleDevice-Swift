@@ -8,7 +8,7 @@
 import Foundation
 
 enum iPadDeviceModel: String, DeviceModelProtocol {
-    case iPad_Simulator = "x86_64"
+    case iPad_Simulator = "iPad Simulator"
 
     case iPad_1 = "iPad 1"
     case iPad_2 = "iPad 2"
@@ -125,7 +125,7 @@ enum iPadDeviceIdentifier: String, DeviceIdentifierProtocol {
     var modelName: String {
         switch self {
         case .iPad_Simulator:
-            return "iPad Simulator"
+            return iPadDeviceModel.iPad_Simulator.modelName
         case .iPad1_1:
             return "iPad 1"
         case .iPad1_2:

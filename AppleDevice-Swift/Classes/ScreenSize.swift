@@ -24,6 +24,11 @@ public enum ScreenSize: String, CustomStringConvertible {
     case inch10dot5 = "10.5 inch"
     case inch11 = "11 inch"
     case inch112dot9 = "12.9 inch"
+    
+    case mm38 = "38mm"
+    case mm40 = "40mm"
+    case mm42 = "42mm"
+    case mm44 = "44mm"
 
     public var description: String {
         return rawValue
