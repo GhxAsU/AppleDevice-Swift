@@ -69,6 +69,18 @@ public struct AppleDevice {
             }
             return nil
         }
+
+    #elseif os(tvOS)
+        public static var type: DeviceType {
+            return .appleTV
+        }
+
+        static var _identifier: DeviceIdentifierProtocol? {
+            if let identifier = AppleTVDeviceIdentifier(rawValue: identifier) {
+                return identifier
+            }
+            return nil
+        }
     #endif
 
     static var _model: DeviceModelProtocol? {
@@ -89,7 +101,9 @@ public struct AppleDevice {
         return type.name
     }
 
-    public static var screenSize: ScreenSize {
-        return _model?.screenSize ?? ScreenSize.unknow
-    }
+    #if !os(tvOS)
+        public static var screenSize: ScreenSize {
+            return _model?.screenSize ?? ScreenSize.unknow
+        }
+    #endif
 }
